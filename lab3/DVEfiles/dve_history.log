@@ -1,0 +1,110 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file sim/debouncer_tb.vpd} {gui_open_db -file sim/edge_detector_tb.vpd} {gui_open_db -file sim/sync_tb.vpd} {gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/sim/counter_testbench.vpd -design V1} {gui_open_db -file sim/counter_testbench.vpd}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1278
+gui_set_state_value -category Layout -key child_console_size_y -value 176
+gui_set_state_value -category Layout -key child_data_size_x -value 171
+gui_set_state_value -category Layout -key child_data_size_y -value 718
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 171
+gui_set_state_value -category Layout -key child_hier_size_y -value 718
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 939
+gui_set_state_value -category Layout -key child_source_size_y -value 713
+gui_set_state_value -category Layout -key child_wave_colname -value 183
+gui_set_state_value -category Layout -key child_wave_colvalue -value 183
+gui_set_state_value -category Layout -key child_wave_left -value 370
+gui_set_state_value -category Layout -key child_wave_right -value 901
+gui_set_state_value -category Layout -key main_pos_x -value 407
+gui_set_state_value -category Layout -key main_pos_y -value 53
+gui_set_state_value -category Layout -key main_size_x -value 1685
+gui_set_state_value -category Layout -key main_size_y -value 1046
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1281
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 887
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 302
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 63
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1578
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1054
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file sim/counter_tb.vpd
+gui_list_select -id Data.1 -selected  { {counter_tb.unnamed$$_0}  {counter_tb.unnamed$$_1}  {counter_tb.unnamed$$_2}  {counter_tb.unnamed$$_3}  counter_tb.clk  {counter_tb.buttons[3:0]}  {counter_tb.leds[3:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {counter_tb.unnamed$$_0} {counter_tb.unnamed$$_1} {counter_tb.unnamed$$_2} {counter_tb.unnamed$$_3} counter_tb.clk {counter_tb.buttons[3:0]} {counter_tb.leds[3:0]} } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 76509
+gui_marker_move -id  Wave.1 C1 118672
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_expand -id  Wave.1   {counter_tb.leds[3:0]}
+gui_list_select -id Wave.1 -selected  { {counter_tb.leds[3]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.leds[1]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.leds[2]}   }
+gui_list_expand -id  Wave.1   {counter_tb.buttons[3:0]}
+gui_marker_move -id  Wave.1 C1 128724
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[2]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[1]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[3]}   }
+gui_marker_move -id  Wave.1 C1 6143
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 107503
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 170329
+gui_marker_move -id  Wave.1 C1 144919
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 112529
+gui_wv_zoom_timerange -id  Wave.1 0 246000
+gui_wv_zoom_timerange -id  Wave.1 0 249351
+gui_wv_zoom_timerange -id  Wave.1 0 270014
+gui_wv_zoom_timerange -id  Wave.1 0 277553
+gui_wv_zoom_timerange -id  Wave.1 0 281462
+gui_wv_zoom_timerange -id  Wave.1 0 285371
+gui_wv_zoom_timerange -id  Wave.1 0 288443
+gui_wv_zoom_timerange -id  Wave.1 0 290397
+gui_wv_zoom_timerange -id  Wave.1 0 293748
+gui_wv_zoom_timerange -id  Wave.1 0 295703
+gui_wv_zoom_timerange -id  Wave.1 0 298495
+gui_wv_zoom_timerange -id  Wave.1 0 299612
+gui_wv_zoom_timerange -id  Wave.1 0 300729
+gui_wv_zoom_timerange -id  Wave.1 0 303242
+gui_wv_zoom_timerange -id  Wave.1 0 307709
+gui_wv_zoom_timerange -id  Wave.1 0 314132
+gui_wv_zoom_timerange -id  Wave.1 0 324463
+gui_wv_zoom_timerange -id  Wave.1 0 333678
+gui_wv_zoom_timerange -id  Wave.1 0 338425
+gui_wv_zoom_timerange -id  Wave.1 0 346801
+gui_wv_zoom_timerange -id  Wave.1 0 350711
+gui_wv_zoom_timerange -id  Wave.1 0 355457
+gui_wv_zoom_timerange -id  Wave.1 0 357970
+gui_wv_zoom_timerange -id  Wave.1 0 361042
+gui_wv_zoom_timerange -id  Wave.1 0 363276
+gui_wv_zoom_timerange -id  Wave.1 0 365789
+gui_wv_zoom_timerange -id  Wave.1 0 365789
+gui_wv_zoom_timerange -id  Wave.1 0 366068
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[3]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[2]}   }
+gui_list_select -id Wave.1 -selected  { {counter_tb.buttons[1]}   }
+gui_marker_move -id  Wave.1 C1 266104
+#Dve crash log 
+#Encountered Illegal Interrupt SIGXFSZ on Mon Sep 19 16:50:04 2022
+#Version: P-2019.06_Full64
+#Platform: Linux x86_64
+#Data of Built: May 31 2019 21:06:56

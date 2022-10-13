@@ -61,6 +61,14 @@ module sq_wave_gen_tb();
                 // TODO: play with the buttons to adjust the output frequency
                 // hint: use the num_samples_fetched integer to wait for
                 // X samples to be fetched by the sampling thread, example below
+                repeat(1) @(posedge clk);
+				buttons<=4;
+				repeat(2) @(posedge clk);
+                assert(leds==1) else $error("State swap failed");
+				buttons<=0;
+				//buttons[1]<=1'd1;
+				repeat(3) @(posedge clk);
+				//buttons[1]<=0;
                 @(num_samples_fetched == 500);
                 $display("Fetched 500 samples at time %t", $time);
                 @(num_samples_fetched == 5000);

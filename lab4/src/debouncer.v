@@ -17,7 +17,33 @@ module debouncer #(
     // Refer to the block diagram in the spec
 
     // Remove this line once you have created your debouncer
-    assign debounced_signal = 0;
-
-    reg [SAT_CNT_WIDTH-1:0] saturating_counter [WIDTH-1:0];
+	reg [WRAPPING_CNT_WIDTH-1:0] cycles = 0;
+	reg [SAT_CNT_WIDTH-1:0] sat_cnt [WIDTH-1:0];
+	integer k;
+	initial begin
+	  for (k = 0; k < WIDTH; k = k + 1) begin
+		sat_cnt[k] = 0;
+	  end
+	end
+	integer i;
+	always @(posedge clk) begin
+		cycles<=cycles+1;
+		if (cycles==SAMPLE_CNT_MAX) begin
+			for(i=0; i<WIDTH; i=i+1) begin
+				if (glitchy_signal[i]!=1) begin	
+					sat_cnt[i]=0;
+				end else begin
+					if (sat_cnt[i]!=PULSE_CNT_MAX) begin
+						sat_cnt[i]=sat_cnt[i]+1;
+					end
+				end
+			end
+		end
+	end
+	genvar n;
+	generate
+		for(n=0; n<WIDTH; n=n+1) begin:name
+			assign debounced_signal[n] = sat_cnt[n]==PULSE_CNT_MAX? 1: 0;
+		end
+	endgenerate
 endmodule

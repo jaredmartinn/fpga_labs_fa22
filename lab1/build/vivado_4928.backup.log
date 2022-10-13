@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 30 15:37:16 2022
+# Process ID: 4928
+# Current directory: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build
+# Command line: vivado
+# Log file: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/vivado.log
+# Journal file: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/vivado.jou
+#-----------------------------------------------------------
+start_gui
+xterm: Xt error: Can't open display: 
+xterm: DISPLAY is not set
+ERROR: [Common 17-1374] Display test failed. Please check DISPLAY environment variable and X server permissions for remote display.
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 30 15:37:28 2022...

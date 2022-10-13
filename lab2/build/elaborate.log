@@ -1,0 +1,67 @@
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/../scripts/elaborate.tcl
+# source ./target.tcl
+## set ABS_TOP                         /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2
+## set TOP                            z1top
+## set FPGA_PART                      xc7z020clg400-1
+## set_param general.maxThreads       4
+## set_param general.maxBackupLogs    0
+## set RTL { /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/adder_tester.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/behavioral_adder.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/counter.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/full_adder.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/structural_adder.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.v }
+## set CONSTRAINTS { /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.xdc }
+# if {[string trim ${RTL}] ne ""} {
+#   read_verilog -v ${RTL}
+# }
+# if {[string trim ${CONSTRAINTS}] ne ""} {
+#   read_xdc ${CONSTRAINTS}
+# }
+# synth_design -top ${TOP} -part ${FPGA_PART} -rtl
+Command: synth_design -top z1top -part xc7z020clg400-1 -rtl
+Starting synth_design
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2562.723 ; gain = 0.000 ; free physical = 8308 ; free virtual = 17341
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top' [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/counter.v:1]
+WARNING: [Synth 8-6090] variable 'cycle' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/counter.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'z1top' (2#1) [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2562.723 ; gain = 0.000 ; free physical = 8341 ; free virtual = 17377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2562.723 ; gain = 0.000 ; free physical = 8338 ; free virtual = 17373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2562.723 ; gain = 0.000 ; free physical = 8338 ; free virtual = 17373
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2562.723 ; gain = 0.000 ; free physical = 8331 ; free virtual = 17367
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.xdc]
+Finished Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/src/z1top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2594.578 ; gain = 0.000 ; free physical = 8239 ; free virtual = 17275
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2594.578 ; gain = 31.855 ; free physical = 8239 ; free virtual = 17275
+9 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2594.578 ; gain = 36.141 ; free physical = 8239 ; free virtual = 17275
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+# start_gui

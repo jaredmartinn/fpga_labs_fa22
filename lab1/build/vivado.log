@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Aug 30 15:51:11 2022
+# Process ID: 12885
+# Current directory: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build
+# Command line: vivado
+# Log file: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/vivado.log
+# Journal file: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/synth/z1top.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/synth/z1top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.06 . Memory (MB): peak = 7543.312 ; gain = 0.000 ; free physical = 7804 ; free virtual = 17570
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7566.492 ; gain = 0.000 ; free physical = 7458 ; free virtual = 17215
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2020.2.3064766) does not match the current software version (2021.1.3247384).
+  File : /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xbdc.
+Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc]
+Finished Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7566.492 ; gain = 0.000 ; free physical = 7358 ; free virtual = 17116
+Restored from archive | CPU: 0.080000 secs | Memory: 0.067619 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7566.492 ; gain = 0.000 ; free physical = 7358 ; free virtual = 17116
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7578.336 ; gain = 0.000 ; free physical = 7060 ; free virtual = 16817
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:22 . Memory (MB): peak = 7706.922 ; gain = 163.609 ; free physical = 6940 ; free virtual = 16709
+close_design
+open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7777.426 ; gain = 0.000 ; free physical = 7042 ; free virtual = 16736
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7777.426 ; gain = 0.000 ; free physical = 7031 ; free virtual = 16720
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7793.434 ; gain = 0.000 ; free physical = 6915 ; free virtual = 16604
+Restored from archive | CPU: 0.020000 secs | Memory: 0.028259 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7793.434 ; gain = 0.000 ; free physical = 6915 ; free virtual = 16604
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7793.434 ; gain = 0.000 ; free physical = 6915 ; free virtual = 16604
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7912.676 ; gain = 135.250 ; free physical = 6862 ; free virtual = 16551
+close_design
+open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7912.676 ; gain = 0.000 ; free physical = 6921 ; free virtual = 16632
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7912.676 ; gain = 0.000 ; free physical = 6908 ; free virtual = 16618
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7912.676 ; gain = 0.000 ; free physical = 6798 ; free virtual = 16508
+Restored from archive | CPU: 0.020000 secs | Memory: 0.028259 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7912.676 ; gain = 0.000 ; free physical = 6798 ; free virtual = 16508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7912.676 ; gain = 0.000 ; free physical = 6798 ; free virtual = 16508
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 7935.598 ; gain = 22.922 ; free physical = 6754 ; free virtual = 16469

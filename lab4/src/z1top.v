@@ -38,7 +38,7 @@ module z1top (
     wire rst;
 
     synchronizer #(.WIDTH(2)) switch_sync (.clk(CLK_125MHZ_FPGA), .async_signal(SWITCHES), .sync_signal(switches_sync));
-
+	//assign switches_sync=SWITCHES;
     assign AUD_SD = switches_sync[1]; // 1 = audio enabled
     assign LEDS[3:0] = switches_sync[0] ? fsm_leds : sq_wave_leds;
     assign code = switches_sync[0] ? nco_code : sq_wave_code;
@@ -69,6 +69,7 @@ module z1top (
         .clk(CLK_125MHZ_FPGA),
         .rst(rst),
         .fcw(fcw),
+        //.fcw(24'd60508),
         .next_sample(next_sample),
         .code(nco_code)
     );

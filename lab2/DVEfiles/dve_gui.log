@@ -1,0 +1,6 @@
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file 'sim/counter_testbench.vpd' was opened successfully.
+The VPD file for 'V1' has been regenerated. Please use 'Reload Databases' instead.
+No design was updated from VPD file.
+The file '/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/sim/counter_testbench.vpd' was opened successfully.

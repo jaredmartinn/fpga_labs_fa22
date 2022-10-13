@@ -1,0 +1,138 @@
+0 
+44
++cli+4
++itf+/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcsdp.tab
++lint=all,noVCDE,noNS,noSVA-UA
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/share/instsww/synopsys-new/vcs/P-2019.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvirsim.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
+-Mout=sync_tb.tb
+-Msaverestoreobj=/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/share/instsww/synopsys-new/vcs/P-2019.06/include
+-Xcbug=0x1
+-Xnotice=1
+-debug=4
+-full64
+-gen_obj
+-line
+-o sync_tb.tb
+-picarchive
+-sverilog
+-timescale=1ns/10ps
+-top
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/button_parser.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/counter.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/dac.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/debouncer.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/edge_detector.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/sq_wave_gen.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/synchronizer.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/z1top.v
+/share/instsww/synopsys-new/vcs/P-2019.06/linux64/bin/vcs1
+sync_tb
+sync_tb.v
+72
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_ID=1
+XDG_SESSION_DESKTOP=mate
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/80437
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/eecs151-adv
+XDG_DATA_DIRS=/home/cc/eecs151/fa22/class/eecs151-adv/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=MATE
+XAUTHORITY=/var/run/lightdm/eecs151-adv/xauthority
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VCS_PATH=/share/instsww/synopsys-new/vcs/P-2019.06/bin
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/share/instsww/synopsys-new/vcs/P-2019.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/share/instsww/synopsys-new/vcs/P-2019.06/linux64
+SYNOPSYS_ROOT=/home/ff/cs250/tools/synopsys
+SSH_AUTH_SOCK=/home/cc/eecs151/fa22/class/eecs151-adv/.cache/keyring-GWIIS1/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=9673
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/9566,unix/unix:/tmp/.ICE-unix/9566
+SERIALTTY=/dev/ttyUSB0
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNAS=/share/b/runas/x86_64
+RISCV=/home/ff/eecs151/tools-151/riscv-toolchain-fa21
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OS=Linux
+NNTPSERVER=news.csua.berkeley.edu
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MGLS_LICENSE_FILE=1717@license-srv.eecs.berkeley.edu
+MFLAGS=
+MATE_DESKTOP_SESSION_ID=this-is-deprecated
+MASTERDIR=/home/ff/eecs151
+MASTER=eecs151
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LM_PROJECT=bwrc_users
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HISTCONTROL=ignoredups
+GTK_OVERLAY_SCROLLING=0
+GNOME_KEYRING_CONTROL=/home/cc/eecs151/fa22/class/eecs151-adv/.cache/keyring-GWIIS1
+GDMSESSION=mate
+DESKTOP_SESSION=mate
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-es0WCAQg5q,guid=963ae3d4db8c36f763d587f86320f053
+CVS_RSH=ssh
+CONFIG_SHELL=/usr/bin/ksh
+COLORTERM=truecolor
+CDS_LIC_FILE=5280@license-srv.eecs.berkeley.edu
+BASH_FUNC_module()=() {  eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ _mlstatus=$?;_ return $_mlstatus_}
+BASH_FUNC_ml()=() {  module ml "$@"_}
+ARCH=x86_64
+AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+0
+10
+1663091808 sync_tb.v
+1663091808 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/z1top.v
+1663095363 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/synchronizer.v
+1663091808 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/sq_wave_gen.v
+1663108718 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/edge_detector.v
+1663108657 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/debouncer.v
+1663091808 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/dac.v
+1663091808 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/counter.v
+1663091808 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab3/src/button_parser.v
+1559359020 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcsdp.tab
+4
+1559360489 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvirsim.so
+1559360051 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so
+1559360008 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
+1559360050 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
+1663109105 sync_tb.tb.daidir
+-1 partitionlib

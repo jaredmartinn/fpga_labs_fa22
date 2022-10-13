@@ -41,7 +41,7 @@ module nco_tb();
         fork
             // Thread to pull samples from the NCO
             begin
-                repeat (122000) begin
+                repeat (122000) begin //122000
                     // Pull next_sample every X cycles where X is a random number in [2, 9]
                     next_sample_fetch = ($urandom() % 8) + 2;
                     repeat (next_sample_fetch) @(posedge clk);
@@ -65,7 +65,8 @@ module nco_tb();
                 // TODO: play with the fcw to adjust the output frequency
                 // hint: use the num_samples_fetched integer to wait for
                 // X samples to be fetched by the sampling thread
-                fcw = 0; // TODO: change this to play a 440 Hz tone
+                fcw = 24'd60508; // TODO: change this to play a 440 Hz tone
+                @(num_samples_fetched == 20);
             end
             // Thread to check code for fcw = 2^16
             begin
@@ -73,6 +74,7 @@ module nco_tb();
                 assert(code == 10'b1000000000) else $error("Code on reset should be LUT[0]");
                 @(num_samples_fetched == 1);
                 assert(code == 10'b1000001100) else $error("Code after 1 sample should be LUT[1]");
+                $display(code);
                 @(num_samples_fetched == 2);
                 assert(code == 10'b1000011001) else $error("Code after 2 samples should be LUT[2]");
                 @(num_samples_fetched == 10);

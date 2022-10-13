@@ -6,8 +6,17 @@ module dac #(
     input rst,
     input [CODE_WIDTH-1:0] code,
     output next_sample,
-    output reg pwm
+    output pwm
 );
-    assign pwm = 0;
-    assign next_sample = 0;
+    reg [CODE_WIDTH-1:0] i;
+	assign next_sample = i==CYCLES_PER_WINDOW-1 ? 1:0;
+	assign pwm = i<=code && code!=0? 1: 0;
+	always @(posedge clk) begin
+		if (rst)
+			i<=0;
+		if (i==CYCLES_PER_WINDOW-1) begin
+			i<=0;
+		end
+		i<=i+1;
+	end
 endmodule

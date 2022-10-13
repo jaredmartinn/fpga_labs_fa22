@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<opml version="1.0">
+	<head>
+		<title>VCS dump file for DVE debugging</title>
+		<vcsVersion>G-2012.09_Full64</vcsVersion>
+		<dateCreated>Tue Sep 27 14:58:09 2022</dateCreated>
+	</head>
+	<body>
+		<!-- VCS compile options -->
+		<vcsCompileOptions text="/share/instsww/synopsys/G-2012.09/amd64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/share/instsww/synopsys/G-2012.09/include  -Mldflags=  -Mout=nco_tb.tb -Mamsrun= -Mvcsaceobjs= -Mobjects= /share/instsww/synopsys/G-2012.09/amd64/lib/libvirsim.so /share/instsww/synopsys/G-2012.09/amd64/lib/liberrorinf.so /share/instsww/synopsys/G-2012.09/amd64/lib/libsnpsmalloc.so  -Msaverestoreobj=/share/instsww/synopsys/G-2012.09/amd64/lib/vcs_save_restore_new.o -Mcrt0= -Mcrtn= -Mcsrc= -Msyslibs=-ldl -lm  -full64 -Xnotice -line +lint=all,noVCDE,noNS,noSVA-UA -timescale=1ns/10ps -Xcbug=0x1 -o nco_tb.tb -top nco_tb +cli+4 +vcsd +itf+/share/instsww/synopsys/G-2012.09/amd64/lib/vcsd.tab +vpi -debug=4 +memcbk -sverilog +vpi -gen_obj /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/button_parser.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/dac.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/debouncer.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/edge_detector.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/fcw_ram.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/fsm.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/nco.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/sq_wave_gen.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/synchronizer.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/z1top.v nco_tb.v "/>
+		<!-- File list for the whole design -->
+		<fileList>
+			<file fid="0" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/dac.v" />
+			<file fid="1" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/nco.v" />
+			<file fid="2" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/z1top.v" />
+			<file fid="3" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/edge_detector.v" />
+			<file fid="4" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/synchronizer.v" />
+			<file fid="5" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/sim/nco_tb.v" />
+			<file fid="6" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/fcw_ram.v" />
+			<file fid="7" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/button_parser.v" />
+			<file fid="8" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/fsm.v" />
+			<file fid="9" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/debouncer.v" />
+			<file fid="10" path="/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/src/sq_wave_gen.v" />
+		</fileList>
+		<!-- Include file list for the whole design -->
+		<includeFileList>
+		</includeFileList>
+		<!-- Encrypted codes list for the whole design -->
+		<encryptedCodesList>
+		</encryptedCodesList>
+		<!-- Inactive codes list for the whole design -->
+		<inactiveCodesList>
+			<inactiveCodes fid="5" lineno="28:29" />
+		</inactiveCodesList>
+		<!-- Compile options UUM based -->
+		<langKeywords>
+			<svFiles fid="0-10" />
+		</langKeywords>
+		<!--  Case insensitive file list -->
+		<caseInsensitiveFiles fid="" />
+		<!-- Macro definition list for the whole design --> 
+		<macroDefinitionList>
+			<macro name="CLOCK_FREQ" module="z1top" sourceID="2" lineno="13" defID="2" defLine="1" value="1"  vip="false"/>
+			<macro name="CLK_PERIOD" module="nco_tb" sourceID="5" lineno="7" defID="5" defLine="2" value="2"  vip="false"/>
+		</macroDefinitionList>
+		<!-- Macro value list for the whole design --> 
+		<macroValueList>
+			<mv i="1" n="125_000_000" />
+			<mv i="2" n="8" />
+		</macroValueList>
+	</body>
+</opml>

@@ -1,0 +1,47 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file sim/uart2uart_tb.vpd} {gui_open_db -file sim/uart_transmitter_tb.vpd} {gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/sim/fsm_tb.vpd -design V1} {gui_open_db -file sim/fsm_tb.vpd} {gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab4/sim/sq_wave_gen_tb.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1913
+gui_set_state_value -category Layout -key child_console_size_y -value 170
+gui_set_state_value -category Layout -key child_data_size_x -value 165
+gui_set_state_value -category Layout -key child_data_size_y -value 800
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 165
+gui_set_state_value -category Layout -key child_hier_size_y -value 800
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1586
+gui_set_state_value -category Layout -key child_source_size_y -value 795
+gui_set_state_value -category Layout -key child_wave_colname -value 300
+gui_set_state_value -category Layout -key child_wave_colvalue -value 253
+gui_set_state_value -category Layout -key child_wave_left -value 557
+gui_set_state_value -category Layout -key child_wave_right -value 1357
+gui_set_state_value -category Layout -key main_pos_y -value 33
+gui_set_state_value -category Layout -key main_size_x -value 1918
+gui_set_state_value -category Layout -key main_size_y -value 1078
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1924
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 970
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 10
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 168
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1929
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1218
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file sim/uart_transmitter_tb.vpd
+gui_list_select -id Data.1 -selected  { {uart_transmitter_tb.data_in[7:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {uart_transmitter_tb.data_in[7:0]} } -insertionbar
+gui_zoom -window Wave.1 -full

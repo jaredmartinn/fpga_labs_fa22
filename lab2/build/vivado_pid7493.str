@@ -1,0 +1,100 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 7493
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Sep 10 19:44:30 PDT 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 5.4.206-200.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 55
+Screen size: 1440x793
+Screen resolution (DPI): 73
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=9
+Scale size: 7
+
+Java version: 	11.0.2 64-bit
+Java home: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	eecs151-adv
+User home directory: /home/cc/eecs151/fa22/class/eecs151-adv
+User working directory: /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/build
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /share/instsww/xilinx/Vivado
+HDI_APPROOT: /share/instsww/xilinx/Vivado/2021.1
+RDI_DATADIR: /share/instsww/xilinx/Vivado/2021.1/data
+RDI_BINDIR: /share/instsww/xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /home/cc/eecs151/fa22/class/eecs151-adv/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /home/cc/eecs151/fa22/class/eecs151-adv/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /home/cc/eecs151/fa22/class/eecs151-adv/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/share/instsww/xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	
+Vivado journal file: 	
+Engine tmp dir: 	./.Xil/Vivado-7493-c111-2.eecs.berkeley.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license-srv.eecs.berkeley.edu
+XILINX_DSP: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /share/instsww/xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VITIS: 
+XILINX_VIVADO: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /share/instsww/xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	316 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,806 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 55 MB (+54812kb) [00:00:07]
+// [Engine Memory]: 1,645 MB (+1573276kb) [00:00:07]
+// [GUI Memory]: 75 MB (+18534kb) [00:00:07]
+// [GUI Memory]: 81 MB (+1938kb) [00:00:08]
+// [GUI Memory]: 102 MB (+17559kb) [00:00:09]
+// Xgd.load filename: /share/instsww/xilinx/Vivado/2021.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 1.4s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.8s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.2s
+// [Engine Memory]: 1,768 MB (+42616kb) [00:00:25]
+// [GUI Memory]: 107 MB (+373kb) [00:00:25]
+// [GUI Memory]: 116 MB (+3803kb) [00:00:26]
+// [GUI Memory]: 124 MB (+2805kb) [00:00:27]
+// Schematic: addNotify
+// [GUI Memory]: 134 MB (+3627kb) [00:00:29]
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// bz (cs):  Sourcing Tcl script '/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/../scripts/elaborate.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Sourcing Tcl script '/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab2/../scripts/elaborate.tcl'"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,797 MB. GUI used memory: 88 MB. Current time: 9/10/22, 7:44:30 PM PDT
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// PAPropertyPanels.initPanels (LEDS0_i (RTL_INV)) elapsed time: 0.4s
+// [GUI Memory]: 142 MB (+1333kb) [00:01:32]
+// [GUI Memory]: 151 MB (+1888kb) [00:01:34]
