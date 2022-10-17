@@ -15,39 +15,45 @@ module uart_transmitter #(
     localparam  SYMBOL_EDGE_TIME    =   CLOCK_FREQ / BAUD_RATE;
     localparam  CLOCK_COUNTER_WIDTH =   $clog2(SYMBOL_EDGE_TIME);
 
-    reg [CLOCK_COUNTER_WIDTH+1:0] cycles;
-    reg ready;
-    reg [3:0] i;
-    reg out;
-    assign data_in_ready = ready;
-    assign serial_out = out;
+
+    reg [CLOCK_COUNTER_WIDTH+1:0] clock_counter;
+    reg [9:0] rx_shift;
+    wire rx_running;
+    wire start;
+    reg [3:0] bit_counter;
+    
+    wire symbol_edge;
+    assign symbol_edge = clock_counter == (SYMBOL_EDGE_TIME - 1);
+
+    assign rx_running = bit_counter != 4'd0;
+    assign start = data_in_valid && !rx_running;
+
+    //Output
+    assign data_in_ready = !rx_running;
+    assign serial_out = rx_shift[0];
+
+
+    always @ (posedge clk) begin
+        clock_counter <= (start || reset || symbol_edge) ? 0 : clock_counter + 1;
+    end
+
     always @(posedge clk) begin
-        if(reset) begin
-            cycles<=0;
-            i<=0;
-            out<=1;
+        if (symbol_edge && rx_running) begin 
+            rx_shift <= {0, rx_shift[9:1]};
         end
-        else if (i==0) begin
-            out<=0;
-        end
-        else if (i==9)
-            out<=1;
-        else
-            out<=data_in[i-1];
-        if(!reset) begin
-            ready<=0;
-            cycles<=cycles+1;
-        end
-        if (cycles==SYMBOL_EDGE_TIME-2) begin
-            // if(i>=1 && i<9)
-            //     $display(data_in[i-1]);
-            cycles<=0;
-            if (i==9) begin
-                //$display(4);
-                ready<=1;
-                i<=0;
-            end
-            i<=i+1;
+    end
+
+    always @ (posedge clk) begin
+        if (reset) begin
+            bit_counter <= 0;
+            rx_shift<=10'b1;
+        end else if (start) begin
+            rx_shift<={1, data_in[7:0], 1'b0};
+            bit_counter <= 10;
+        end else if (symbol_edge && rx_running) begin
+            bit_counter <= bit_counter - 1;
+        end else if (bit_counter==0) begin
+            rx_shift<=10'b1;
         end
     end
 endmodule

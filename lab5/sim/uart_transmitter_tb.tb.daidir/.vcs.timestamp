@@ -1,5 +1,5 @@
 0 
-44
+49
 +cli+4
 +itf+/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcsdp.tab
 +lint=all,noVCDE,noNS,noSVA-UA
@@ -37,27 +37,22 @@
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/debouncer.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/edge_detector.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fifo.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fixed_length_piano.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/mem_controller.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/memory.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/piano_scale_rom.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/synchronizer.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_receiver.v
 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.v
 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/bin/vcs1
 uart_transmitter_tb
 uart_transmitter_tb.v
-72
-XDG_VTNR=3
-XDG_SESSION_TYPE=x11
-XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session12
-XDG_SESSION_ID=1065
-XDG_SESSION_DESKTOP=mate
-XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
-XDG_SEAT=seat0
+54
+XDG_SESSION_ID=44
 XDG_RUNTIME_DIR=/run/user/80437
-XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/eecs151-adv
 XDG_DATA_DIRS=/home/cc/eecs151/fa22/class/eecs151-adv/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-XDG_CURRENT_DESKTOP=MATE
-XAUTHORITY=/var/run/lightdm/eecs151-adv/xauthority
-VTE_VERSION=5204
 VMR_MODE_FLAG=64
 VCS_PATH=/share/instsww/synopsys-new/vcs/P-2019.06/bin
 VCS_MX_HOME_INTERNAL=1
@@ -69,10 +64,10 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/share/instsww/synopsys-new/vcs/P-2019.06/linux64
 SYNOPSYS_ROOT=/home/ff/cs250/tools/synopsys
-SSH_AUTH_SOCK=/home/cc/eecs151/fa22/class/eecs151-adv/.cache/keyring-F71GT1/ssh
+SSH_TTY=/dev/pts/8
+SSH_CONNECTION=67.169.127.27 65494 128.32.40.181 22
+SSH_CLIENT=67.169.127.27 65494 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=3256
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3126,unix/unix:/tmp/.ICE-unix/3126
 SERIALTTY=/dev/ttyUSB0
 SCRNAME=vcs
 SCRIPT_NAME=vcs
@@ -91,7 +86,6 @@ MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MGLS_LICENSE_FILE=1717@license-srv.eecs.berkeley.edu
 MFLAGS=
-MATE_DESKTOP_SESSION_ID=this-is-deprecated
 MASTERDIR=/home/ff/eecs151
 MASTER=eecs151
 MAKELEVEL=1
@@ -100,27 +94,25 @@ LOADEDMODULES=
 LM_PROJECT=bwrc_users
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
-IMSETTINGS_MODULE=none
-IMSETTINGS_INTEGRATE_DESKTOP=yes
 HISTCONTROL=ignoredups
-GTK_OVERLAY_SCROLLING=0
-GNOME_KEYRING_CONTROL=/home/cc/eecs151/fa22/class/eecs151-adv/.cache/keyring-F71GT1
-GDMSESSION=mate
-DESKTOP_SESSION=mate
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-6jwGfsvxiY,guid=9cbfe3283cfda6d7a34d24c7633c9e7c
 CVS_RSH=ssh
 CONFIG_SHELL=/usr/bin/ksh
-COLORTERM=truecolor
 CDS_LIC_FILE=5280@license-srv.eecs.berkeley.edu
-BASH_FUNC_module()=() {  eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ _mlstatus=$?;_ return $_mlstatus_}
+BASH_FUNC_module()=() {  _module_raw "$@" 2>&1_}
 BASH_FUNC_ml()=() {  module ml "$@"_}
+BASH_FUNC__module_raw()=() {  eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ _mlstatus=$?;_ return $_mlstatus_}
 ARCH=x86_64
 AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
 ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
 0
-10
+15
 1664922309 uart_transmitter_tb.v
-1664923081 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/piano_scale_rom.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/memory.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/mem_controller.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fixed_length_piano.v
+1665779481 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v
 1664917652 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_receiver.v
 1664917652 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart.v
 1664917706 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/synchronizer.v
@@ -134,5 +126,5 @@ ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
 1559360051 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so
 1559360008 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
 1559360050 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
-1664923095 uart_transmitter_tb.tb.daidir
+1665779493 uart_transmitter_tb.tb.daidir
 -1 partitionlib

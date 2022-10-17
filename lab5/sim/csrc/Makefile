@@ -8,7 +8,7 @@ VSRC=..
 TARGET_ARCH=
 
 # Choose name of executable 
-PRODUCTBASE=$(VSRC)/uart_transmitter_tb.tb
+PRODUCTBASE=$(VSRC)/fifo_tb.tb
 
 PRODUCT=$(PRODUCTBASE)
 
@@ -39,7 +39,7 @@ LD=g++
 STRIPFLAGS= 
 
 PRE_LDFLAGS= # Loader Flags
-LDFLAGS= -rdynamic  -Wl,-rpath='$$ORIGIN'/uart_transmitter_tb.tb.daidir -Wl,-rpath=./uart_transmitter_tb.tb.daidir -Wl,-rpath=/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib -L/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib 
+LDFLAGS= -rdynamic  -Wl,-rpath='$$ORIGIN'/fifo_tb.tb.daidir -Wl,-rpath=./fifo_tb.tb.daidir -Wl,-rpath=/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib -L/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib 
 # Picarchive Flags
 PICLDFLAGS= -Wl,-rpath-link=./ 
 

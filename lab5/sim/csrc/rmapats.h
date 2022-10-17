@@ -2443,14 +2443,14 @@ static inline U asm_bsf (U in)
 #ifdef __cplusplus
 extern "C" {
 #endif
-void  hs_0_M_0_21__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_0_0__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_0_1__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
-void  hs_0_M_0_2__uart_transmitter_tb_tb_daidir (UB  * pcode);
-void  hs_0_M_1_21__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_1_0__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_1_1__uart_transmitter_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
-void  hs_0_M_1_2__uart_transmitter_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_0_21__fifo_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_0_0__fifo_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_0_1__fifo_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_0_2__fifo_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_1_21__fifo_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_1_0__fifo_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_1_1__fifo_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_1_2__fifo_tb_tb_daidir (UB  * pcode);
 void  hsG_0__0 (struct dummyq_struct * I1297, EBLK  * I1292, U  I689);
 #ifdef __cplusplus
 }
