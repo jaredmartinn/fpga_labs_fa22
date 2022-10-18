@@ -1,0 +1,130 @@
+0 
+49
++cli+4
++itf+/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcsdp.tab
++lint=all,noVCDE,noNS,noSVA-UA
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/share/instsww/synopsys-new/vcs/P-2019.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvirsim.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
+-Mout=mem_controller_tb.tb
+-Msaverestoreobj=/share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/share/instsww/synopsys-new/vcs/P-2019.06/include
+-Xcbug=0x1
+-Xnotice=1
+-debug=4
+-full64
+-gen_obj
+-line
+-o mem_controller_tb.tb
+-picarchive
+-sverilog
+-timescale=1ns/10ps
+-top
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/button_parser.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/debouncer.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/edge_detector.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fifo.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fixed_length_piano.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/mem_controller.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/memory.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/piano_scale_rom.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/synchronizer.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_receiver.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v
+/home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.v
+/share/instsww/synopsys-new/vcs/P-2019.06/linux64/bin/vcs1
+mem_controller_tb
+mem_controller_tb.v
+54
+XDG_SESSION_ID=893
+XDG_RUNTIME_DIR=/run/user/80437
+XDG_DATA_DIRS=/home/cc/eecs151/fa22/class/eecs151-adv/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VMR_MODE_FLAG=64
+VCS_PATH=/share/instsww/synopsys-new/vcs/P-2019.06/bin
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/share/instsww/synopsys-new/vcs/P-2019.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/share/instsww/synopsys-new/vcs/P-2019.06/linux64
+SYNOPSYS_ROOT=/home/ff/cs250/tools/synopsys
+SSH_TTY=/dev/pts/12
+SSH_CONNECTION=67.169.127.27 62398 128.32.40.181 22
+SSH_CLIENT=67.169.127.27 62398 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SERIALTTY=/dev/ttyUSB0
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNAS=/share/b/runas/x86_64
+RISCV=/home/ff/eecs151/tools-151/riscv-toolchain-fa21
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OS=Linux
+NNTPSERVER=news.csua.berkeley.edu
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MGLS_LICENSE_FILE=1717@license-srv.eecs.berkeley.edu
+MFLAGS=
+MASTERDIR=/home/ff/eecs151
+MASTER=eecs151
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LM_PROJECT=bwrc_users
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+HISTCONTROL=ignoredups
+CVS_RSH=ssh
+CONFIG_SHELL=/usr/bin/ksh
+CDS_LIC_FILE=5280@license-srv.eecs.berkeley.edu
+BASH_FUNC_module()=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC_ml()=() {  module ml "$@"_}
+BASH_FUNC__module_raw()=() {  eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ _mlstatus=$?;_ return $_mlstatus_}
+ARCH=x86_64
+AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+0
+15
+1666058959 mem_controller_tb.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/piano_scale_rom.v
+1666116995 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/memory.v
+1666121802 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/mem_controller.v
+1665684442 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fixed_length_piano.v
+1665779516 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v
+1664917652 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_receiver.v
+1664917652 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart.v
+1664917706 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/synchronizer.v
+1665984615 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fifo.v
+1664917715 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/edge_detector.v
+1664917725 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/debouncer.v
+1664917652 /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/button_parser.v
+1559359020 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/vcsdp.tab
+4
+1559360489 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvirsim.so
+1559360051 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so
+1559360008 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
+1559360050 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
+1666121807 mem_controller_tb.tb.daidir
+-1 partitionlib

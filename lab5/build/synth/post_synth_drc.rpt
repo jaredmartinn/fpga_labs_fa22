@@ -1,0 +1,102 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Oct 18 13:53:32 2022
+| Host         : c111-7.eecs.berkeley.edu running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_drc -file post_synth_drc.rpt
+| Design       : z1top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: z1top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 11
++--------+----------+----------------------+------------+
+| Rule   | Severity | Description          | Violations |
++--------+----------+----------------------+------------+
+| MDRV-1 | Error    | Multiple Driver Nets | 10         |
+| ZPS7-1 | Warning  | PS7 block required   | 1          |
++--------+----------+----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+MDRV-1#1 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/Q[0] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[0]/Q
+on_chip_uart/uatransmit/rx_shift_reg[0]__0/Q.
+Related violations: <none>
+
+MDRV-1#2 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/Q[1] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[9]/Q
+on_chip_uart/uatransmit/rx_shift_reg[9]__0/Q.
+Related violations: <none>
+
+MDRV-1#3 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[1] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[1]/Q
+on_chip_uart/uatransmit/rx_shift_reg[1]__0/Q.
+Related violations: <none>
+
+MDRV-1#4 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[2] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[2]/Q
+on_chip_uart/uatransmit/rx_shift_reg[2]__0/Q.
+Related violations: <none>
+
+MDRV-1#5 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[3] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[3]/Q
+on_chip_uart/uatransmit/rx_shift_reg[3]__0/Q.
+Related violations: <none>
+
+MDRV-1#6 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[4] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[4]/Q
+on_chip_uart/uatransmit/rx_shift_reg[4]__0/Q.
+Related violations: <none>
+
+MDRV-1#7 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[5] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[5]/Q
+on_chip_uart/uatransmit/rx_shift_reg[5]__0/Q.
+Related violations: <none>
+
+MDRV-1#8 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[6] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[6]/Q
+on_chip_uart/uatransmit/rx_shift_reg[6]__0/Q.
+Related violations: <none>
+
+MDRV-1#9 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[7] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[7]/Q
+on_chip_uart/uatransmit/rx_shift_reg[7]__0/Q.
+Related violations: <none>
+
+MDRV-1#10 Error
+Multiple Driver Nets  
+Net on_chip_uart/uatransmit/rx_shift[8] has multiple drivers: on_chip_uart/uatransmit/rx_shift_reg[8]/Q
+on_chip_uart/uatransmit/rx_shift_reg[8]__0/Q.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

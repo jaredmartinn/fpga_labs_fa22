@@ -1,0 +1,21 @@
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/../scripts/impl.tcl
+# source ../target.tcl
+## set ABS_TOP                         /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5
+## set TOP                            z1top
+## set FPGA_PART                      xc7z020clg400-1
+## set_param general.maxThreads       4
+## set_param general.maxBackupLogs    0
+## set RTL { /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/button_parser.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/debouncer.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/edge_detector.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fifo.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/synchronizer.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_receiver.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/uart_transmitter.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/fixed_length_piano.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/mem_controller.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/memory.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/piano_scale_rom.v /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.v }
+## set CONSTRAINTS { /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/src/z1top.xdc }
+# open_checkpoint ${ABS_TOP}/build/synth/${TOP}.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adv/fpga_labs_fa22/lab5/build/synth/z1top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2546.547 ; gain = 0.000 ; free physical = 997 ; free virtual = 5235
